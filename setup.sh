@@ -1,4 +1,4 @@
 #!/bin/bash
 
 poetry install
-python -m playwright install
+poetry run python -m playwright install
