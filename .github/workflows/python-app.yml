@@ -30,6 +30,15 @@ jobs:
     - name: Install dependencies
       run: |
         bash setup.sh
+    - name: Setup Browser
+      # You may pin to the exact commit or the version.
+      # uses: abhi1693/setup-browser@5683f56704b3d683f0ff19a4752f3d32512d42e8
+      uses: abhi1693/setup-browser@v0.3.1
+      with:
+        # The browser to install [chrome, edge, firefox].
+        browser: chrome
+        # The version to install.
+        version: latest
     - name: Run collector
       run: |
         poetry run python main.py "https://www.tiktok.com/@____wahid0/video/7080579870845144347"
