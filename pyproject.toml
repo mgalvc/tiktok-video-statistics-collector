@@ -7,6 +7,7 @@ authors = ["Matheus Correia"]
 [tool.poetry.dependencies]
 python = "^3.9"
 TikTokApi = "^5.1.1"
+playwright = "^1.22.0"
 
 [tool.poetry.dev-dependencies]
 
